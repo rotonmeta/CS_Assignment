@@ -94,7 +94,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.mycompany.app.App</mainClass>
+                <mainClass>com.rotonmeta.cs.App</mainClass>
               </manifest>
             </archive>
           </configuration>

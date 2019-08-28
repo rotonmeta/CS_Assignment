@@ -30,6 +30,7 @@ public class DatabaseManager {
     public void deleteAllEvents(){
         session.beginTransaction();
         session.<String>createQuery("Delete from Event").executeUpdate();
+        session.flush();
         session.getTransaction().commit();
 
         LOG.info("Deleted all Events from Database");
@@ -50,6 +51,9 @@ public class DatabaseManager {
         sessionFactory.close();
     }
 
+    public Session getSession() {
+        return session;
+    }
 
 
 

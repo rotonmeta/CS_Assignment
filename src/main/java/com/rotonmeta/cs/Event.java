@@ -1,5 +1,6 @@
 package com.rotonmeta.cs;
 
+import java.io.Serializable;
 import java.lang.String;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,7 +12,8 @@ import org.apache.logging.log4j.Logger;
 
 
 @Entity
-public class Event{
+public class Event implements Serializable{
+    private static final long serialVersionUID = 1L;
 
     private static final Logger LOG = LogManager.getLogger(Event.class);
 

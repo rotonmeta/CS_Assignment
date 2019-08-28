@@ -19,6 +19,7 @@ public class LogFileManager {
     private JsonParser parser;
     private String filePath;
 
+
     public LogFileManager(String fileName){
         this.parser = new JsonParser();
         this.filePath = fileName;
