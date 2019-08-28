@@ -19,3 +19,12 @@
 
 **Run the tests:**
 1. Execute this command: ``` mvn test ```
+
+
+**Some remarks:**
+- I have used log4j2 to log informations about the database connection and the generated events on the console.
+- Unit test coverage is 76% (main is not tested).
+- This program can handle big files: it uses streams to process the data.
+- I have thinked of 2 multi-threaded solution:
+  1. Replacing streams with parallelStreams, this would be a simple solution.
+  2. Creating another class that implements the runnable interface, and put in the run() method the function that extracts the Event instance from the log file.
